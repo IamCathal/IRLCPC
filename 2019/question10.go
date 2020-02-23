@@ -8,7 +8,6 @@ import (
 )
 
 func generateAddress(name string, number int) string {
-	// fmt.Println(name, number)
 	matchString := regexp.MustCompile(`[^A-Za-z]`)
 	nameArr := matchString.Split(name, 6)
 	resEmail := ""
@@ -29,6 +28,9 @@ func generateAddress(name string, number int) string {
 }
 
 func question10() {
+	// Didn't read from stdin this time as not sure
+	// how exactly it'll be done on the day and wanted
+	// to get a working solution
 	numNames := 6
 	names := make([]string, numNames)
 	emails := make([]string, numNames)
